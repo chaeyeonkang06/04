@@ -9,17 +9,10 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    int x, y, z, m;
-    int a, b, c;
+    int time;
     
-    x=2;
-    z=1;
-    a=3;
-    b=4;
-    c=5;
+    printf("input the seconds: ");
+    scanf("%i", &time);
     
-    y=a*x*x+b*x+c;
-    m=(x+y+z)/3
-    
-    printf("y=%d, m=%d", y, m);
+    printf("the time is %i : %i\n", time/60, time%60);
 }
