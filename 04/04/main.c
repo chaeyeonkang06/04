@@ -9,20 +9,12 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    unsigned int x;
-    int b;
+    int time;
     
-    printf("input a number: ");
-    scanf("%ui", &x);
+    printf("input the second: ");
+    scanf("%i", &time);
     
-    for (b=0; x!=0; x>>=1)
-    {
-        if (x&1)
-        {
-            b++;
-        }
-    }
-    printf("the result is : %i\n", b);
+    printf("the time for %i is %i : %i : %i", time, time/3600, (time%3600)/60, time%60);
     
     return 0;
 }
