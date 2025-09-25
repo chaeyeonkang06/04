@@ -9,20 +9,17 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    int x, y;
+    int x, y, z, m;
+    int a, b, c;
     
-    printf("input two integers:");
-    scanf("%i %i", &x, &y);
+    x=2;
+    z=1;
+    a=3;
+    b=4;
+    c=5;
     
-    printf("+ result is %i\n", x+y);
+    y=a*x*x+b*x+c;
+    m=(x+y+z)/3
     
-    printf("- result is %i\n", x-y);
-    
-    printf("* result is %i\n", x*y);
-    
-    printf("/ result is %i\n", x/y);
-    
-    printf("% result is %i\n", x%y);
-    
-    return 0;
+    printf("y=%d, m=%d", y, m);
 }
