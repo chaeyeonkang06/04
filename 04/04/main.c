@@ -9,10 +9,11 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    int time;
+    int year;
+   
+    printf("input year: ");
+    scanf("%i", &year);
     
-    printf("input the seconds: ");
-    scanf("%i", &time);
+    printf("is the year %i leap year? %i\n", year, (year%4==0 && year%100!=0) || year%400==0);
     
-    printf("the time is %i : %i\n", time/60, time%60);
 }
